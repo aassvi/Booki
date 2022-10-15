@@ -9,61 +9,60 @@
 
 }
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-  html, body, main{
-    width: 100%;
-    font-family:'Raleway';
-  
-  }
-  h1{
-    font-size: 18px;
-    
+  box-sizing: border-box;       /* propriete qui permet d'integrer padding et border dans la largeur et hauteur global element*/
+  margin: 0px;                  /* initialise ces valeurs   */
+  padding: 0px;
 }
+
+html, body, main{               /* hôter le decalage de ces trois balises  */
+  width: 100%;                  /* parent avec une largeur de 100% (par défaut)  pour faciliter le resposif */
+  font-family:'Raleway';        /* les enfants prennent la largeur necessaire et s'adaptent selon la largeur de l'écran  */
+}
+
+h1{
+  font-size: 18px;    
+}
+
 h2 h3{
-    font-weight: bolder;
-    font-size: 22px;
+  font-family:'Raleway-Bold';
+  font-size: 22px;
 }
   
 header{
   margin-top: 20px;
-  width: 90%;
+  width: 90%;                   /* Header prend 90% de son parent */
   height: fit-content;
   margin-left: 50px;
     
     
 }
 .ligne1{
-  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-  width: 100% ;
-  height: 60px;
+  width: 100% ;                 /* ligne1 prend la totalité de la largeur de son parent*/
+ 
 }
 .logo{
-  width: 50%;
-  height: 30px;
-  flex-grow: 1;
+  width: 70%;                   /* logo prend 70% de son parent ligne1*/ 
+
   text-align: start;
   padding-left: 30px;
 }
 nav{
-  width: 40%;
-  height: 50px;
-  flex-grow: 2;
+  width: 30%;                   /* nav 30% de ligne1*/
+  margin-bottom: 20px;
+
 }
 
 #hebergementActivites{
-  width: 100%;
+  width: 100%;                   /* 100% de son parent nav*/   
   display: flex;
   text-align: end;
     
 }
 #hebergementActivites a{
   text-decoration: none;
-  font-weight: normal;
+ 
   color:black;
    
 }
@@ -71,24 +70,24 @@ nav{
   color: #0065FC;
 }
 .hebergementsAncre {
-  width: 100%;
+  width: 50%;                     /*   50% de don parent hebergementsActivites*/
+ 
  
 }
 .hebergementsAncre a:hover{
   color:  #0065FC ;
-  padding: 25px;
- 
+  padding-top: 25px;
   border-top: #0065FC solid 2px ;
   text-decoration: none;
 }
 .activitesAncre{
-  width: 100%;
+  width: 50%;                     /*   50% de don parent hebergementsActivites*/
+  
   
 }
-.activitesAncre a:hover{  /* repetition */
+.activitesAncre a:hover{  
   color: #0065FC ;
-  padding: 25px;
- 
+  padding-top: 25px;
   border-top: #0065FC solid 2px ;
   text-decoration: none;
 }
@@ -108,102 +107,96 @@ header a:visited{
   line-height: 40px;
   width: 100%;
 }
+.rechercheHebergement h2{
+  font-family: 'Raleway-Bold';
+}
 
 input{
-    position: relative;
-    left: 40px;
-    border:1px solid #F2F2F2 ;
-    height: 50px;
-    padding-left: 10px;
+  position: relative;
+  left: 40px;
+  border:1px solid #F2F2F2 ;
+  height: 50px;
+  padding-left: 10px;
 }
 ::placeholder{
-    padding-left: 10px;
-    font-weight:bold;
+  padding-left: 10px;
+  font-family: 'Raleway-Bold';
+  font-size: 18px;
+  max-width: 100%;
 }
 .icon{
-    font-size: 18px;
-    color:black;
-    background-color:#F2F2F2;
-    padding-top: 5px;
-   
-    border-top-left-radius:15px ;
-    border-bottom-left-radius:15px;
-    position: absolute;
-    left: 50px;
-    width: 40px;
-    height: 50px;
-    text-align: center;  
-    }
+  font-size: 18px;
+  color:black;
+  background-color:#F2F2F2;
+  padding-top: 5px;  
+  border-top-left-radius:15px ;
+  border-bottom-left-radius:15px;
+  position: absolute;
+  left: 50px;
+  width: 40px;
+  height: 50px;
+  text-align: center;  
+}
 
 .button1{
-    background-color: #0065FC;
-    border: none;
-    color: white;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
-    bottom: 0px;
-    left: 30px;
-    padding: 10px;
-    height: 50px;
-    font-size: 18px;
+  background-color: #0065FC;
+  border: none;
+  color: white;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  bottom: 0px;
+  left: 30px;
+  padding: 10px;
+  height: 50px;
+  font-size: 18px;
 }
 .button2 {
-    display: none;
+  display: none;
 }
+
+
 form button:hover{
-    background-color:#DEEBFF;
-    color:#0065FC;
-    font-weight: bold;
+  background-color:#DEEBFF;
+  color:#0065FC;
+  font-family: 'Raleway-Bold';
 }
 
 #filtresConteneur{
-    margin-top: 30px;
-    display: flex;
-    font-size: larger;
-    font-weight: bold;
+  margin-top: 30px;
+  display: flex;
+  font-size: larger;
+  font-family: 'Raleway-Bold';
 }
 
 .filtreSeulConteneur{
-    height:50px;
-    margin-left: 30px;
-    margin-bottom:10px;
-    padding-right:15px;
-    border-radius: 25px;
-    border: 2px solid #dad6d6 ;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center; 
+  height:50px;
+  margin-left: 30px;
+  margin-bottom:10px;
+  padding-right:15px;
+  border-radius: 25px;
+  border: 2px solid #dad6d6 ;
+  background-color: white;
+  color: black;
+  font-family: 'Raleway-Bold';
+  display: flex;
+  align-items: center; 
 }
 .filtreSeulConteneur i{
-    margin-left: -10px;
-     margin-right: 10px;
-     border-radius: 50%; 
-     background-color: #DEEBFF; 
-     color: #0065FC;
-     width: 52px;
-     height: 52px; 
-     text-align: center; 
-     padding: 15px;
+  margin-left: -10px;
+  margin-right: 10px;
+  border-radius: 50%; 
+  background-color: #DEEBFF; 
+  color: #0065FC;
+  width: 54px;
+  height: 54px; 
+  text-align: center; 
+  padding: 15px;
 }
 .filtreSeulConteneur:hover {
-    background-color:#0065FC;
-    color:white;
-    font-weight: bold;
-}
-.symbole{
-  
-  border-radius: 50%;
-  background-color:#DEEBFF;
-  width: 52px;
-  height: 52px;
-  text-align:center;  
-  padding: 15px;
-  margin-left: -15px;
-  color:#0065FC;
-    
+  background-color:#0065FC;
+  color:white;
+  font-family: 'Raleway-Bold';
 }
 
 .filtreSeulConteneur button:hover {
@@ -215,25 +208,26 @@ form button:hover{
 #resultatFiltres{
   display:flex ;
   margin-top: 20px;
-  align-items: baseline;
+  
+ 
 }
 .icon2{
+  font-family:'Raleway-Bold';
   color:#0065FC;
   text-align: center;
   padding-bottom: 40px;
   width: 30px;
-  height: 30px;
+  height: 20px;
   border-radius: 50%;
   border: 1px solid #b3aeae;  
 }  
-.icon2 i{
-  font-weight: bold;
-}
+
 .nombreLogements{
   margin-left:10px;
 }
 section {
-  font-size: 30px;
+  width: 100%;                         /* parent largeur 100% = body section prend sa largeur */
+  font-size: 30px;                  
   display: flex;
   justify-content:space-around;
   margin: 50px;
@@ -241,14 +235,14 @@ section {
 }
 .containerhebergement { 
   font-size: 30px;
-  width: 66%;
+  width: 66%;                          /* enfant  largeur 66%  */
   border-radius: 15px;
   background-color:#F2F2F2;
 }
 .hebergementsHeader{
   width: 300px;
  
-  font-weight: bold;
+  font-family:'Raleway-Bold';
   margin-left: 25px;
   margin-top: 20px;
 }
@@ -257,9 +251,8 @@ section {
 }
 .row{
   display: flex;
-  flex-direction: row;
   justify-content:space-between;
-  flex-flow: wrap;
+  flex-flow: row wrap;                  /* propriete flex-flow racooucie de flex-direction et flex-wrap*/
   background-color: #f1f1f1;
   padding: 20px;
   padding-top: 0px;
@@ -268,7 +261,7 @@ section {
 }
   /* cards modele 1*/
 .card1{    
-  width: 30%;
+  width: 30%;                       /* card responsive */
   height: 206px;
   background-color: white; 
   border-radius: 20px;
@@ -287,7 +280,7 @@ section {
   
   
 .card1 img {
-  width: 100%;      
+  width: 100%;                    /* image responsive */
   height: 119px;
   border-top-left-radius : 20px;
   border-top-right-radius : 20px;
@@ -301,38 +294,33 @@ section {
 }
   
 .card-body {
- 
-  font-weight: bolder;
   padding-left: 10px;
   height: 90px; 
   color: black; 
   font-size: 16px;
-  font-size: 16px;
-  
   
 }
-.card1  .card-body p{
-  margin: 8px;
+.card1  .card-body p{               /* combinateur descendant*/
+  padding-bottom: 5px;
   width:100%;
+  font-family: 'Raleway-Bold';
 }
 
-
   
-  
-.card-prix{
+.card1 .card-prix p{
   font-family: 'Raleway';
   font-size:  12px;
-  color:rgb(75, 69, 69);
-  font-weight: lighter;
+  padding-bottom: 5px;
+  font-weight:lighter;
+ 
 }
-.card-prix i{
-  font-weight: bold;
-} 
+
+
 .card-etoiles {
   color: #0065FC;  
   font-size:  10px;
   display: flex;
-  margin-left: 5px;
+  margin-left: 0px;
   
 }
 .card-pas-etoiles{
@@ -343,7 +331,7 @@ section {
 #afficherPlus {
   margin-left: 20px;
   margin-top: 0px;
-  font-weight: bolder;
+  font-family: 'Raleway-Bold';
   font-size:20px;
   border-top: none;
   text-align:left;
@@ -354,7 +342,7 @@ section {
 }
 
 article {
-  width: 30%;
+  width: 30%;                     /* enfant  largeur 30%  */
   border-radius: 15px;
   background-color:#F2F2F2;      
   padding: 0%;
@@ -376,12 +364,13 @@ article a {
 }
 .articleHeader h2{
   font-size: 22px;
+  font-family: 'Raleway-Bold';
   padding-left: 30px;
   width: 270px;
 }
 .etoile{
   width: 10%;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 5px;
   font-size:15px;
 }
@@ -416,39 +405,41 @@ article a {
   overflow: hidden;
 }
 .card_modele2 .card-body {
-  padding-top: 20px;
-  font-weight: bolder;
-  font-size: 16px;
-  width: 120%;
-    
+  padding-top: 10px;
+  width:120%;
+  font-family: 'Raleway-Bold';
 }
-.card_modele2 .card-prix {
-  color: rgb(85, 79, 79);
-  margin-top: 10px;
- }
 
+
+.card_modele2 .card-prix p{
+  font-family: 'Raleway';
+  font-size:  12px;
+  font-weight:lighter;
+  margin-top: 10px;
+  width: 100%;
+ 
+}
 .card_modele2 .card-etoiles {
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 100%;
 }
-.card_modele2 p{
-  width: 130px;
- 
- 
-}
+
 .card_modele2 a{
-  
   border: 2px solid black;
 }
 
-.card2 {
-  background-color: #f1f1f1;
-  width: 30%;
-}
+
   
 aside{
   margin-left: 70px;
   margin-top: 50px; 
    
+}
+aside p{
+  padding-top: 15px;
+  font-family:'Raleway-Bold';
+  font-size: smaller;
+
 }
 #activitesAsideConteneur{
   margin-right: 40px;
@@ -467,10 +458,12 @@ aside{
 .cardAsideMobile{
   display: none;
 }
+
+
   
 .activitesHeader{
   width: 300px;
-  font-weight: bolder;
+  font-family: 'Raleway-Bold';
   font-size:large;    
 }
 .card_modele3{
@@ -492,9 +485,9 @@ aside{
   width: 302px;
   height: 56px;
   padding-left: 10px;
-  font-weight: bold;     
+  font-family: 'Raleway-Bold';    
 }
-  
+
   
 .deuxPhotosCards{
   flex-direction: column;
@@ -510,14 +503,14 @@ aside{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card_modele4 img{
-  width: 100%;
+  width: 100%;                           
   height: 179px;
   border-top-left-radius : 20px;
   border-top-right-radius : 20px;
-  overflow: hidden;
+  overflow: hidden;                       /* cache une partie de l'image */
 }
   
-.cover{
+.cover{                                   /* rempli la card partie image*/
   object-fit: cover;
   height: 100%;
 }
@@ -578,10 +571,8 @@ footer .cols p {
 .cols h4{
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: bold;
-  width: 200px;
-  /*font-family: 'Raleway-Bold';*/
-    
+  font-family: 'Raleway-Bold';
+  width: 200px;    
 }
   
   

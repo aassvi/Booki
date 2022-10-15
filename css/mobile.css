@@ -1,417 +1,832 @@
 /* Responsive layout - mobile  */
 @media screen and (max-width: 767px) {
-    body{
-      margin: 0%;
-      padding: 0%;
-     
-    }
-    h1{
-        font-size: 18px;
-        
-    }
-    h2, h3{
-        font-weight: bolder;
-        font-size: 22px;
-     
-    }
-    header{
-        margin-top: 20px;
-        width: 90%;
-        height: fit-content;
-        margin-left: 10px;
-             
-    }
-    .ligne1{
-        display: unset;
-     
-        width: 50% ;
-        height: 60px;
-    }
-    .logo{
-        width: 50%;
-        height: 30px;
-        flex-grow: 1;
-       
-        padding-left: 140px;
-    }
-    nav{
-        width: 40%;
-        height: 50px;
-        flex-grow: 2;
-    }
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
+  h1{
+    font-size: 18px;   
+  }
+  h2, h3{
+    font-family: 'Raleway-Bold';
+    font-size: 20px;
+  }
+  header{
+    margin-top: 20px;
+    width: 90%;
+    height: fit-content;
+    margin-left: 10px;     
+  }
+  .ligne1{
+    display: unset; 
+    width: 50% ;  
+  }
+  .logo{
+    width: 50%;
+    padding-left: 140px;
+  }
+  nav{
+    width: 40%;
+  }
       
-    #hebergementActivites{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 150%;
-        display: flex;
+  #hebergementActivites{
+    padding-top: 20px;
+    width: 200%;
+    display: flex;
+  }
+  
+  #hebergementActivites a{
+    text-decoration: none;
+    font-weight: normal;
+    color:black;
+  }
+  
+  #hebergementActivites a:hover{
+    color: #0065FC;
        
-          
-    }
-    #hebergementActivites a{
-        text-decoration: none;
-        font-weight: normal;
-        color:black;
-         
-    }
-    #hebergementActivites a:hover{
-        color: #0065FC;
-    }
-    .hebergementsAncre {
-        width: 100%;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-right: 60px;
-        
-        
-       
-    }
-    .hebergementsAncre a:hover{
-        color:  #0065FC ;
-        padding: 25px;
-       border-top: none;
-        border-bottom: #0065FC solid 2Px ;
-        text-decoration: none;
-    }
-    .activitesAncre{
-        width: 100%;
-        padding: 10px;
-        
-    }
-    .activitesAncre a:hover{  /* repetition */
-        color: #0065FC ;
-        padding: 25px;
-       border-top: none;
-        border-bottom: #0065FC solid 2px ;
-        text-decoration: none;
-    } 
-    .rechercheHebergement{
-        width: 100%;
-        margin-top: 20px;
-        line-height: 40px;
-     
-        
-      }
-    .icon{
-        font-size: 18px;
-        color:black;
-        background-color:#F2F2F2;
-        padding-top: 5px;
-        padding-right:30px ;
-        margin-top: 10px;
-        border-top-left-radius:15px ;
-        border-bottom-left-radius:15px;
-        position: absolute;
-        left: 25px;
-        width: 80px;
-        height: 50px;
-        
-        }
+  }
+  .hebergementsAncre {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 60px;
+    border-bottom:#F2F2F2 solid 2Px ;
+  }
+  .hebergementsAncre a:hover{
+    color:  #0065FC ;
+    padding-bottom: 15px;
+    border-top: none;
+    border-bottom: #0065FC solid 2Px ;
+    text-decoration: none;
+  }
+  .activitesAncre{
+    width: 100%;
+    border-bottom:#F2F2F2 solid 2Px ;
+  }
+  .activitesAncre a:hover{  /* repetition */
+    color: #0065FC ;
+    padding-bottom: 15px;
+    border-top: none;
+    border-bottom: #0065FC solid 2px ;
+    text-decoration: none;
+  } 
+  .rechercheHebergement{
+    width: 100%;
+    margin-top: 20px;
+     line-height: 40px;
+  }
+  .form{
+    width: 70%;
+  }
+  .icon{
+    font-size: 18px;
+    color:black;
+    background-color:#F2F2F2;
+    padding-top: 5px;
+    padding-right:30px ;
+    margin-top: 10px;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px;
+    position: absolute;
+    left: 25px;
+    width: 80px;
+    height: 50px;
+  }
     
-        input{
-          position: relative;
-          left: 60px;
-          border:1px solid #F2F2F2 ;
-          width: 180px;
-          height: 50px;
-          padding-left: 10px;
-          
-      }
-      ::placeholder{
-          padding-left: 10px;
-          font-weight:bold;
-      }
-    .button1 {
-      display: none;
+  input{
+    position: relative;
+    left: 60px;
+    border:1px solid #F2F2F2 ;
+    width: 180px;
+    height: 50px;
+    padding-left: 10px;
+  }
+  ::placeholder{
+    padding-left: 10px;
+    font-family:'Raleway-Bold';
+    font-size: 16px;
+  }
+  .button1 {
+    display: none;
     }
-    .button2{
-      margin-top: 10px;
-        display: unset;
-        background-color: #0065FC;
-        border: none;
-        color: white;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
-        width: 50px;
-        height:50px ;
-        position: relative;
-        bottom: 0px;
-        left: 50px;
-        padding: 10px;
-        height: 50px;
-        font-size: 18px;
-    }
-    #filtresConteneur{
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: larger;
-        font-weight: bold;
-        width: 100%;
-        margin-left: 5px;
-       
-    }
-    .filtreHeader{
-        margin-right: 100px;
-        
-
-    }
-    .filtreSeulConteneur{
-        height:50px;
-        margin-left: 10px;
-        margin-bottom:10px;
-        padding-right:10px;
-        border-radius: 25px;
-        border: 2px solid #dad6d6 ;
-        background-color: white;
-        color: black;
-        font-weight: bold;
-        display: flex;
-        align-items: center; 
-    }
-    #resultatFiltres{
-        display:flex ;
-        margin-top: 20px;
-        margin-left: 10px;
-        align-items: baseline;
-        justify-content: center;
-      }
-      .icon2{
-        color:#0065FC;
-        text-align: center;
-
-        padding-bottom: 40px;
-        width: 40px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid #b3aeae;
-      }  
-
-      .nombreLogements{
-        margin-left:10px;
-        margin-bottom: 10px;
-        line-height:normal;
-      }
-    .rechercheHebergement{
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-    .rechercheHebergement h2, p{
-        margin-left: 10px;
-       
-        line-height: normal;
-      
-    }
-    .rechercheHebergement p{
-     margin-top: 10px;
-     margin-bottom: 20px;
-    
+  .button2{
+    margin-top: 10px;
+    display: unset;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 48px;
+    height:50px ;
+    position: relative;
+    bottom: 0px;
+    left: 48px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  #filtresConteneur{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;  
+    font-family:'Raleway-Bold';
+    width: 100%;
+    margin-left: 5px;    
+  }
+  .filtreHeader{
+    margin-right: 110px;
   }
  
-    section{
-        flex-wrap: wrap-reverse;
-        margin: 0%;
-       
-    }
-    .containerhebergement { 
-        
-        width: 100%;
-        background-color:white;
-        border-radius: 0px;
-      
-    } 
-    .hebergementsHeader{
-      width: 90%;
-      font-weight:bolder;
-      padding-left: 10px;
-    }
-    .row{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      
-        background-color:white;
-    }
-    .card1 {
-        width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-       
-    }
-
-
-    .card-body{
-      font-weight: bold;
-      width: 200px;
-     
-    }
-      
-      
-    .card-prix{
-      font-family: 'Raleway';
-      font-size:  10px;
-      color:rgb(75, 69, 69);
-      font-weight: lighter;
-    }
-
-
-    article {
-        width: 100%;
-        border-radius:unset;
-        background-color:#F2F2F2;      
-        padding: 0%;
-        margin-right: 0%;
-        margin-left: 0px;
-      
-       
-    }
-      
-    article a {
-        text-decoration: none;
-    }
-      
-    #articleHeaderConteneur{
-        margin-top: 20px;
-        width: 90%;
-        display: flex;       
-    }
-    .articleHeader h2{
-        width: 350px;
-        
-        
-        padding-left: 30px;
-        padding-right: 0px;
-    }
-     
-    .column{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      width: 100%;
-      padding-bottom: 30px;
-  } 
-    .card_modele2{
-      width: 100%;
-    }
-    #afficherPlus {
-      margin-left: 20px;
-      margin-top: 20px;
-     
-      font-size:20px;
-      border-top: none;
-      text-align:left;
-    }
-
-    aside{
-      margin-left: 15px;
-      margin-top: 20px;  
-    }
-    #activitesAsideConteneur, a{
-  
-      width:350px;
-     
-    }
-  
-    .photosActivitesConteneur{
-     display: none;
-    }
-  
-    .activitesHeader{
-      width: 320px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .cardAsideMobile{
-      padding-top: 20px;  
-      display: flex;
-      flex-direction: column;
-    }
-    .card_modele6{
-      padding-top: 0px;
-     margin-bottom:80px;
-      width: 100%;
-      height: 195px;
-      background-color: white; 
-      border-radius: 20px;
-    }
-    .card_modele6 a{
-      width: 300px;
-      height: 195px;
-    }
-    .card_modele6 img {
-      width: 100%;
-      height: 190px;
-      border-top-left-radius : 20px;
-      border-top-right-radius : 20px;
-      overflow: hidden;
-    }
-  
-    .card_modele6 .card-body{
-      width: 100%;
-      height: 56px;
-      padding-left: 15px;
-      padding-top: 5px;
-      margin-top: 0px;   
-      border-bottom-left-radius : 20px;
-      border-bottom-right-radius : 20px;  
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
-   }
-   .card_modele6 .card-body p{
-    padding-top: 15px;
-    font-weight: bold;
-    
-   }
-   .card_modele6, a:hover{ 
-       border-top: none;
-      
-    }
-    .card_modele6:hover .card-body{
-      background-color:#DEEBFF;        
-    }
-  
-
-   
-    footer {
-      margin-top: 1300px;
-      background-color: #F2F2F2;
-      font-size: 16px;
-     
-    }
-    #footerConteneur {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      width: 300px;  
-      margin-left: 20px;
-      
-    }
-
-    footer .cols {
-      margin-left: 0px;
-      padding-top: 10px;
-      width: 250px;
-      
-    }
-    footer .cols p {
-       line-height: 30px;
-       width: 200px;
-    }
-    footer .cols a{
-      border-top: none;
-      text-decoration: none;
-   }
-
-    footer .cols h4 {
+  .filtreSeulConteneur{
+    height:50px;
     margin-left: 10px;
-     margin-top: 0px;
-     margin-bottom: 10px;
+    margin-bottom:10px;
+    padding-right:10px;
+    border-radius: 25px;
+    border: 2px solid #dad6d6 ;
+    background-color: white;
+    color: black;
+    font-family:'Raleway-Bold';
+    display: flex;
+    align-items: center; 
+  }
+  .filtreSeulConteneur i{
+    margin-left: -10px;
+    margin-right: 0px;
+    border-radius: 50%; 
+    background-color: #DEEBFF; 
+    color: #0065FC;
+    width: 52px;
+    height: 52px; 
+    text-align: center; 
+    padding: 15px;
+  }
+  button.filtreSeulConteneur p{
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  #resultatFiltres{
+    display:flex ;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .icon2{
+    color:#0065FC;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #b3aeae;
+  }  
+
+  .nombreLogements{
+    margin-left:10px;
+    margin-bottom: 10px;
+    line-height:normal;
+  }
+  .rechercheHebergement{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .rechercheHebergement h2, p{
+    margin-left: 10px;    
+    line-height: normal;   
+  }
+  .rechercheHebergement p{
+    margin-top: 10px;
+    margin-bottom: 20px; 
+  }
+ 
+  section{
+    flex-wrap: wrap-reverse;
+    margin: 0%;
+  }
+  .containerhebergement {   
+    width: 100%;
+    background-color:white;
+    border-radius: 0px;
+  } 
+   .hebergementsHeader{
+    width: 90%;
+    padding-left: 0px;
+  }
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+   }
+  .card1 {
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
     
-     /*font-family: 'Raleway-Bold';*/
-    }
+  .card-body{
+    font-family: 'Raleway-Bold';
+    width: 200px;
+  }
+      
+  .card-body p{
+    width: 100%;
+  }  
+  .card-prix{
+    font-family: 'Raleway';
+    font-size:  10px;
+    color:rgb(75, 69, 69);
+    font-weight: lighter;
+  }
+
+
+  article {
+    width: 100%;
+    border-radius:unset;
+    background-color:#F2F2F2;      
+    padding: 0%;
+    margin-right: 0%;
+    margin-left: 0px;
+  }
+      
+  article a {
+    text-decoration: none;
+  }
+      
+  #articleHeaderConteneur{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 80%;
+    display: flex; 
+  }
+  .articleHeader h2{
+    width:95%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .etoile{
+    width: 10%;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size:15px;
+  }
+  .column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-left: -10px;
+  } 
+  .card_modele2{
+    width: 100%;
+  }
+  .card_modele2 .card-body{
+    padding-left: 0px;
+  }
+  .card_modele2 .card-body p{
+    width: 90%;
+    font-size: 14px;
+  }
+  .card-etoiles {
+    color: #0065FC;  
+    font-size:  10px;
+    display: flex;
+    margin-left: 10px;
+ }
+  #afficherPlus {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size:20px;
+    border-top: none;
+    text-align:left;
+  }
+  #afficherPlus p{
+    width: 200px;
+  }
+    
+  aside{
+    margin-left: 15px;
+    margin-top: 20px; 
+    width: 95%; 
+  }
+   #activitesAsideConteneur, a{
+    width:96%;
+  }
+ 
+  .photosActivitesConteneur{
+    display: none;
+  }
+  
+  .activitesHeader{
+    width: 100%;
+    font-size: 20px;
+    font-family:'Raleway-Bold';
+    padding-left: 15px;
+  }
+  .cardAsideMobile{
+    padding-top: 20px;  
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .card_modele6{
+    padding-top: 0px;
+    margin-bottom:80px;
+    width: 100%;
+    height: 195px;
+    background-color: white; 
+    border-radius: 20px;
+  }
+  .card_modele6 a{
+    width: 100%;
+    height: 195px;
+  }
+  .card_modele6 img {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+    overflow: hidden;
+  }
+  
+  .card_modele6 .card-body{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 0px;   
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius : 20px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+  }
+  .card_modele6 .card-body p{
+    padding-top: 5px;
+    font-family:'Raleway-Bold';
+  }
+  .card_modele6, a:hover{ 
+    border-top: none;
+  }
+  .card_modele6:hover .card-body{
+    background-color:#DEEBFF;        
+  }
+  
+  footer {
+    margin-top: 1300px;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    width: 100%;
+  }
+  #footerConteneur {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;  
+    margin-left: 20px;
+  }
+
+  footer .cols {
+    margin-left: 0px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  footer .cols p {
+    line-height: 30px;
+    width: 100%;
+  }
+  footer .cols a{
+    border-top: none;
+    text-decoration: none;
+  }
+
+  footer .cols h4 {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+   }
 }
 
+/* Responsive layout - mobile  */
+@media screen and (max-width: 319px) {
+  h1{
+    font-size: 14px;
+  }
 
+  header{
+    margin-top: 20px;
+    width: 90%;
+    height: fit-content;
+    margin-left: 10px;       
+  }
+  .ligne1{
+    display: unset; 
+    width: 50% ;
+  }
+  .logo{
+    width: 40%;
+    padding-left: 40px;
+  }
+  nav{
+    width: 40%;
+  }
+  
+  #hebergementActivites{
+    padding-top: 20px;
+    width: 200%;
+    display: flex;    
+  }
+  #hebergementActivites a{
+    text-decoration: none;
+    font-weight: normal;
+    color:black;
+  }
+  #hebergementActivites a:hover{
+    color: #0065FC; 
+  }
+  .hebergementsAncre {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 60px;
+    border-bottom:#F2F2F2 solid 2px ;
+  }
+  .hebergementsAncre a:hover{
+    color:  #0065FC ;
+    padding-bottom: 15px;
+    border-top: none;
+    border-bottom: #0065FC solid 2px ;
+    text-decoration: none;   
+  }
+  .activitesAncre{
+    width: 100%;
+    border-bottom:#F2F2F2 solid 2px ;
+  }
+  .activitesAncre a:hover{  /* repetition */
+    color: #0065FC ;
+    padding-bottom: 15px;
+    border-top: none;
+    border-bottom: #0065FC solid 2px ;
+    text-decoration: none;
+  } 
+  .rechercheHebergement{
+    width: 100%;
+    margin-top: 20px;
+    line-height: 40px;
+ 
+    
+  }
+  .form{
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: left;
+  }
+  .icon{
+    font-size: 16px;
+    color:black;
+    background-color:#F2F2F2;
+    padding-top: 0px;
+    padding-right:10px ;
+    padding-left: 5px;
+    margin-top: 10px;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px;
+    position: absolute;
+    left: 25px;
+    width: 35px;
+    height: 40px; 
+  }
+
+  input{
+    position: relative;
+    left: 45px;
+    border:1px solid #F2F2F2 ;
+    width: 100px;
+    height:40px;
+    padding-left: 0px;    
+  }
+  ::placeholder{
+    padding-left: 5px;
+    font-family:'Raleway-Bold';
+    font-size: 10px;   
+  }
+  .button1 {
+    display: none;
+  }
+  .button2{
+    margin-top: 10px;
+    display: unset;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 38px;
+    height:38px ;
+    position: relative;
+    bottom: 0px;
+    left: 34px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #filtresConteneur{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family:'Raleway-Bold';
+    width: 100%;
+    margin-left: 5px;
+  }
+  .filtreHeader{
+    margin-right: 110px;
+    font-size: 14px;
+  }
+  .filtreSeulConteneur{
+    height:50px;
+    margin-left: 10px;
+    margin-bottom:10px;
+    padding-right:10px;
+    border-radius: 25px;
+    border: 2px solid #dad6d6 ;
+    background-color: white;
+    color: black;
+    font-family:'Raleway-Bold';
+    font-size: 14px;
+    display: flex;
+    align-items: center; 
+  }
+  .filtreSeulConteneur i{
+    margin-left: -10px;
+    margin-right: 0px;
+    border-radius: 50%; 
+    background-color: #DEEBFF; 
+    color: #0065FC;
+    width: 52px;
+    height: 52px; 
+    text-align: center; 
+    padding: 15px;
+  }
+  button.filtreSeulConteneur p{
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  #resultatFiltres{
+    display:flex ;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .icon2{
+    color:#0065FC;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #b3aeae;
+    font-size: 14px;
+  }  
+
+  .nombreLogements{
+    margin-left:10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .rechercheHebergement{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .rechercheHebergement h2, p{
+    margin-left: 10px; 
+  }
+  .rechercheHebergement p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  section{
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    margin: 0%; 
+  }
+  .containerhebergement {   
+    width: 100%;
+    background-color:white;
+    border-radius: 0px;
+  } 
+  .hebergementsHeader{
+    width: 70%;
+    padding-left: 0px;
+  }
+  .hebergementsHeader h2{
+    font-size: 15px;
+    font-family: 'Raleway-Bold';
+  }
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    background-color:white;
+  }
+  .card1 {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card1 .card-body{
+    font-family: 'Raleway-Bold';
+    width:100%;
+  }
+  
+  .card1 .card-body p{
+    width: 80%;
+    font-size:12px ;
+  }  
+  .card-prix{
+    font-family: 'Raleway';
+    font-size:  8px;
+    color:rgb(75, 69, 69);
+    font-weight: lighter;
+  }
+  #afficherPlus {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size:15px;
+    border-top: none;
+    text-align:left;
+  }
+
+  article {
+    width: 100%;
+    border-radius:unset;
+    background-color:#F2F2F2; 
+    margin-left: 0px;  
+    font-size: 0px;    
+  }
+  
+  article a {
+    text-decoration: none;
+  }
+  
+  #articleHeaderConteneur{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 70%;
+    display: flex;      
+  }
+  .articleHeader h2{
+    width:100%;
+    font-size: 15px;
+  }
+  .etoile{
+    width: 10%;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size:13px;
+  }
+  .column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-left: -20px;
+  } 
+  .card_modele2{
+    width: 110%;
+  }
+  .card_modele2 .card-body{
+    padding-left: 0px;
+  }
+  .card_modele2 .card-body p{
+    width: 90%;
+    font-size: 12px;
+  }
+  .card-etoiles {
+    color: #0065FC;  
+    font-size:  8px;
+    display: flex;
+    margin-left: 10px;
+  }
+  #afficherPlus {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size:16px;
+    border-top: none;
+    text-align:left;
+  }
+  #afficherPlus p{
+    width: 200px;
+  }
+
+  aside{
+    margin-left: 15px;
+    margin-top: 20px; 
+    width: 95%; 
+  }
+  #activitesAsideConteneur, a{
+    width:90%;
+  }
+
+  .photosActivitesConteneur{
+    display: none;
+  }
+
+  .activitesHeader{
+    width: 100%;
+    font-family:'Raleway-Bold';
+    padding-left: 15px;
+  }
+  .activitesHeader h3{
+    font-size: 16px;
+    width: 100%;
+  }
+  .cardAsideMobile{
+   padding-top: 20px;  
+   display: flex;
+   flex-direction: column;
+   padding-left: 10px;
+  }
+  .card_modele6{
+    padding-top: 0px;
+    margin-bottom:80px;
+    width: 110%;
+    height: 180px;
+    background-color: white; 
+    border-radius: 20px;
+  }
+  .card_modele6 a{
+    width: 100%;
+    height: 180px;
+  }
+  .card_modele6 img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+    overflow: hidden;
+  }
+
+  .card_modele6 .card-body{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 0px;   
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius : 20px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card_modele6 .card-body p{
+    width: 100%;
+    padding-top: 5px;
+    font-family:'Raleway-Bold';
+  }
+  .card_modele6, a:hover{ 
+     border-top: none;
+  }
+  .card_modele6:hover .card-body{
+    background-color:#DEEBFF;        
+  }
+
+
+  footer {
+    margin-top: 1300px;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    width: 100%;
+  }
+  #footerConteneur {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;  
+    margin-left: 20px;
+  }
+
+  footer .cols {
+    margin-left: 0px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  footer .cols p {
+    line-height: 30px;
+    width: 100%; 
+  }
+  footer .cols a{
+    border-top: none;
+    text-decoration: none;
+  }
+
+  footer .cols h4 {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
